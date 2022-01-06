@@ -28,33 +28,7 @@ public class BaseConstants {
 		}
 	}
 
-	/**
-	 * <b>Swagger 配置信息：文档标题</b>
-	 */
-	public static final String SWAGGER_TITLE = props.getProperty("swagger.title");
+	public static final String SECRET_KEY = props.getProperty("secret.key");
+	public static final Long EXPIRE_AUTO_SEC = Long.parseLong(props.getProperty("expire.auth.sec"));
 
-	/**
-	 * <b>Swagger 配置信息：文档描述</b>
-	 */
-	public static final String SWAGGER_DESCRIPTION = props.getProperty("swagger.description");
-
-	/**
-	 * <b>Swagger 配置信息：文档版本</b>
-	 */
-	public static final String SWAGGER_VERSION = props.getProperty("swagger.version");
-
-	/**
-	 * <b>Swagger 配置信息：联系人姓名</b>
-	 */
-	public static final String SWAGGER_CONTACT_NAME = props.getProperty("swagger.contact.name");
-
-	/**
-	 * <b>Swagger 配置信息：联系人 URL 地址</b>
-	 */
-	public static final String SWAGGER_CONTACT_URL = props.getProperty("swagger.contact.url");
-
-	/**
-	 * <b>Swagger 配置信息：联系人电子邮件</b>
-	 */
-	public static final String SWAGGER_CONTACT_EMAIL = props.getProperty("swagger.contact.email");
 }
